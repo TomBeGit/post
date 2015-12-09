@@ -1,4 +1,4 @@
-package App;
+package gan.post.App;
 
 import android.support.v7.app.AppCompatActivity;
 
