@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="my wallet"/>
+        <item
+            android:id="@+id/nav_billing"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="my billing order"/>
+        <item
+            android:id="@+id/nav_receiving"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="my receiving order"/>
+        <item
+            android:id="@+id/nav_deliver_app"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="deliver application"/>
+        <item
+            android:id="@+id/nav_op_ins"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="operating instructions"/>
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="setting up"/>
+    </group>
+
+
+</menu>
