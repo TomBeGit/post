@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="gan.draw.FilterActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#CAFF70"
+        android:title="@string/order"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Departure"
+        android:textColor="#000000"/>
+
+
+    <EditText
+        android:background="@drawable/edit_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#CDC8B1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Destination"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:background="@drawable/edit_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#CDC8B1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Remain"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_10_h"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="10hour"
+            android:background="@drawable/button_green_style"/>
+
+        <Button
+            android:id="@+id/bt_24_h"
+            android:layout_width="0dp"
+            android:textSize="10sp"
+            android:text="24hour"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray_style"/>
+
+        <Button
+            android:textSize="10sp"
+            android:text="2day"
+            android:id="@+id/bt_2_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray_style"/>
+
+        <Button
+            android:textSize="10sp"
+            android:text="5day"
+            android:id="@+id/bt_5_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_gray_style"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#CDC8B1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Reward"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0$"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="25$"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="50$"
+            android:textColor="#000000"/>
+
+        <SeekBar
+            android:id="@+id/sb_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:indeterminate="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#CDC8B1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Weight"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0KG"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="50KG"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="100KG"
+            android:textColor="#000000"/>
+
+        <SeekBar
+            android:id="@+id/sb_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:indeterminate="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#CDC8B1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#9AFF9A"
+            android:text="OK"/>
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#EE3A8C"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="CANCEL"/>
+    </LinearLayout>
+</LinearLayout>

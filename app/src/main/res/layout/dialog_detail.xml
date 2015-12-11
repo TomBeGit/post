@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Are you sure?"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="This is your adjusted price."
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="$25"
+                android:textColor="#ee0000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="origin"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="$5"
+                android:textColor="#ee0000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="markup"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="$30"
+                android:textColor="#ee0000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="real"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#9AFF9A"
+            android:text="OK"/>
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#EE3A8C"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"/>
+    </LinearLayout>
+</LinearLayout>
