@@ -4,27 +4,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_wallet"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/icon_district"
             android:title="my wallet"/>
         <item
             android:id="@+id/nav_billing"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/icon_drawer_wallet"
             android:title="my billing order"/>
         <item
             android:id="@+id/nav_receiving"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/icon_drawer_send_order"
             android:title="my receiving order"/>
         <item
             android:id="@+id/nav_deliver_app"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/icon_drawer_apply"
             android:title="deliver application"/>
         <item
             android:id="@+id/nav_op_ins"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/icon_drawer_help"
             android:title="operating instructions"/>
         <item
             android:id="@+id/nav_set"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/icon_drawer_setting"
             android:title="setting up"/>
     </group>
 
