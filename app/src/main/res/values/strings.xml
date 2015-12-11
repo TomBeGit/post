@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Post</string>
+    <string name="title_activity_draft"></string>
+    <string name="title_activity_order"></string>
+    <string name="title_activity_next_order"></string>
+    <string name="title_activity_comment"></string>
+    <string name="title_activity_order_comment"></string>
 </resources>

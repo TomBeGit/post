@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="gan.post"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gan.post">
 
     <application
         android:name=".App.App"
@@ -11,13 +11,32 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.HomeActivity">
-        </activity>
+        <activity android:name=".module.HomeActivity" />
+        <activity
+            android:name=".module.DraftActivity"
+            android:label="@string/title_activity_draft"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module.NextOrderActivity"
+            android:label="@string/title_activity_next_order"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module.OrderCommentActivity"
+            android:label="@string/title_activity_order_comment"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
