@@ -14,78 +14,84 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="200dp">
         </android.support.v4.view.ViewPager>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/viewPager"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_alignBottom="@id/viewPager"
-                android:gravity="center">
-                <TextView
-                    android:id="@+id/tv_intro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:ellipsize="end"
-                    android:singleLine="true"
-                    android:text="我是文本"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"/>
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我是文本"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
 
-                <LinearLayout
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="20dp"
-                    android:id="@+id/dot_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                </LinearLayout>
-
+            <LinearLayout
+                android:id="@+id/dot_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
             </LinearLayout>
+
+        </LinearLayout>
 
     </RelativeLayout>
 
 
     <!--按钮的Layout-->
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
         <!--每一行的Layout-->
     </LinearLayout>
     <!--每一行的Layout-->
     <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:focusableInTouchMode="true">
+
         <TableRow>
             <!--每个Button的Layout-->
             <LinearLayout
-                android:onClick="send"
-                android:clickable="true"
-                android:focusable="true"
+                android:id="@+id/ll_send"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:focusable="false"
                     android:src="@drawable/main_send"/>
 
                 <TextView
@@ -97,20 +103,24 @@
             </LinearLayout>
             <!--每个Button的Layout-->
             <LinearLayout
-                android:layout_height="120dp"
                 android:layout_width="wrap_content"
+                android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:src="@drawable/main_deliver"/>
 
                 <TextView
@@ -123,19 +133,23 @@
 
             <!--每个Button的Layout-->
             <LinearLayout
-                android:layout_height="120dp"
                 android:layout_width="wrap_content"
+                android:layout_height="120dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:src="@drawable/main_plan"/>
 
                 <TextView
@@ -146,51 +160,61 @@
                     android:textSize="22sp"/>
             </LinearLayout>
         </TableRow>
+
         <TableRow>
             <!--每个Button的Layout-->
             <LinearLayout
-                android:clickable="true"
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="order"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:duplicateParentState="true"
-                    android:onClick="order"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
                     android:layout_gravity="center_horizontal"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:src="@drawable/main_order"/>
 
                 <TextView
-                    android:focusable="false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:focusable="false"
                     android:text="order"
                     android:textSize="22sp"/>
             </LinearLayout>
             <!--每个Button的Layout-->
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:layout_marginTop="3dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:src="@drawable/main_wallet"/>
 
                 <TextView
@@ -203,20 +227,25 @@
 
             <!--每个Button的Layout-->
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="#ffffff"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:layout_marginTop="3dp"
                     android:id="@+id/bt_send"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:background="#ffffff"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:src="@drawable/main_help"/>
 
                 <TextView
@@ -230,7 +259,6 @@
     </TableLayout>
 
 
-
-    </LinearLayout>
+</LinearLayout>
 
 

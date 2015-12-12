@@ -32,6 +32,7 @@ public class HomeActivity extends AppCompatActivity
     private TextView tv_intro;
     private LinearLayout dot_layout;
     private ArrayList<AdInfo> list = new ArrayList<AdInfo>();
+    private LinearLayout mllSend;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +88,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string
                 .navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -99,6 +100,13 @@ public class HomeActivity extends AppCompatActivity
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tv_intro = (TextView) findViewById(R.id.tv_intro);
         dot_layout = (LinearLayout) findViewById(R.id.dot_layout);
+        mllSend = (LinearLayout) findViewById(R.id.ll_send);
+        mllSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(HomeActivity.this,"Send",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
