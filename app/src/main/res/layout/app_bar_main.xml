@@ -8,9 +8,13 @@
     android:fitsSystemWindows="true"
     tools:context="gan.draw.MainActivity">
 
+    <!--让窗口上下的内容可以透明化-->
+    <!--    android:fitsSystemWindows="true"  -->
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@null"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
@@ -23,7 +27,6 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main"/>
-
 
 
 </android.support.design.widget.CoordinatorLayout>

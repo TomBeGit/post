@@ -8,56 +8,43 @@
     android:orientation="vertical"
     tools:context=".OrderActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#CAFF70"
-        android:title="@string/order"
-        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CAFF70"
+            app:layout_scrollFlags="scroll|enterAlways" />
 
-        <Button
-            android:id="@+id/bt_latest"
-            android:layout_width="0dp"
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/order_button"
-            android:text="Latest"/>
+            android:background="#ffffff"
+            />
+    </android.support.design.widget.AppBarLayout>
 
-        <Button
-            android:id="@+id/bt_distance"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-10dp"
-            android:layout_weight="1.1"
-            android:background="@drawable/order_button"
-            android:maxLines="1"
-            android:text="Distance"/>
+    <!--Tab被选中字体的颜色-->
+    <!--app:tabSelectedTextColor="@android:color/holo_blue_bright"-->
+    <!--Tab未被选中字体的颜色-->
+    <!--app:tabTextColor="@android:color/black"-->
+    <!--Tab指示器下标的颜色-->
+    <!--app:tabIndicatorColor="@android:color/holo_blue_bright"-->
 
-        <Button
-            android:id="@+id/bt_reward"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-10dp"
-            android:layout_weight="1"
-            android:background="@drawable/order_button"
-            android:text="Reward"/>
 
-        <Button
-            android:id="@+id/bt_weight"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-10dp"
-            android:layout_weight="1"
-            android:background="@drawable/order_button"
-            android:text="Weight"/>
 
-    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/fl_content"

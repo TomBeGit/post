@@ -6,5 +6,6 @@
     <color name="gray">#BABABA</color>
     <color name="white">#ffffff</color>
     <color name="dark_green">#6E8B3D</color>
+    <color name="black">#000000</color>
 
 </resources>

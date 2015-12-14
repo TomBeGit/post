@@ -84,6 +84,9 @@ public class HomeActivity extends AppCompatActivity
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        toolbar.setTitle("");
+//        TextView mTbTitle = (TextView) findViewById(R.id.toolbar_title);
+//        mTbTitle.setText("Home");
         setSupportActionBar(toolbar);
 
 
