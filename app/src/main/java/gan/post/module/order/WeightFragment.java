@@ -43,7 +43,9 @@ public class WeightFragment extends Fragment {
         list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getActivity(),DetailActivity.class));
+                Intent intent = new Intent(getActivity(),DetailActivity.class);
+                intent.putExtra("order",orderInfos.get(position));
+                startActivity(intent);
             }
         });
     }

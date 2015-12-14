@@ -1,12 +1,62 @@
 package gan.post.model.bean;
 
 
-public class OrderInfo {
+import android.graphics.Bitmap;
+
+import java.io.Serializable;
+
+public class OrderInfo implements Serializable {
+    private String name;
+    private String deadline;
+    private String value;
+    private String desc;
+    private Bitmap bitmap;
     private String fromAddress;
     private String toAddress;
     private String updated;
     private String reward;
     private String weight;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
+
 
     public String getFromAddress() {
         return fromAddress;
@@ -46,5 +96,21 @@ public class OrderInfo {
 
     public void setWeight(String weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderInfo{" +
+                "name='" + name + '\'' +
+                ", deadline='" + deadline + '\'' +
+                ", value='" + value + '\'' +
+                ", desc='" + desc + '\'' +
+                ", bitmap=" + bitmap +
+                ", fromAddress='" + fromAddress + '\'' +
+                ", toAddress='" + toAddress + '\'' +
+                ", updated='" + updated + '\'' +
+                ", reward='" + reward + '\'' +
+                ", weight='" + weight + '\'' +
+                '}';
     }
 }
