@@ -3,9 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
+    <color name="colorGreen">#3A9E5B</color>
+    <color name="colorWhite">#ffffff</color>
+=======
     <color name="gray">#BABABA</color>
     <color name="white">#ffffff</color>
     <color name="dark_green">#6E8B3D</color>
     <color name="black">#000000</color>
 
+>>>>>>> origin/dev
 </resources>

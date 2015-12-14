@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">Post</string>
+<<<<<<< HEAD
+    <string name="title_activity_draft"></string>
+    <string name="title_activity_order"></string>
+    <string name="title_activity_next_order"></string>
+    <string name="title_activity_comment"></string>
+    <string name="title_activity_order_comment"></string>
+=======
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="order">Order</string>
+>>>>>>> origin/dev
 </resources>
