@@ -7,8 +7,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/background"
-        style="@style/AppBaseTheme">
+        android:background="@drawable/background">
 
     </android.support.v7.widget.Toolbar>
 

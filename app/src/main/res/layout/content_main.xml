@@ -195,6 +195,7 @@
             </LinearLayout>
             <!--每个Button的Layout-->
             <LinearLayout
+                android:onClick="wallet"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
@@ -227,6 +228,7 @@
 
             <!--每个Button的Layout-->
             <LinearLayout
+                android:onClick="help"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
                 android:layout_marginRight="10dp"

@@ -6,7 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 
-import gan.post.module.R;
+import gan.post.R;
+
 
 public class SettingsActivity extends AppCompatActivity {
 

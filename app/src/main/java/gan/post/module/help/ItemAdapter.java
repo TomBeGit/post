@@ -10,11 +10,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import gan.post.module.R;
+import gan.post.R;
 
-/**
- * Created by Dell on 2015/12/18.
- */
+
 public class ItemAdapter extends ArrayAdapter<Item> {
     private int resourceId;
     public ItemAdapter(Context context,int resource,List<Item>Objects){

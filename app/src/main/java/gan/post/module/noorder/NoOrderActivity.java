@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import gan.post.module.R;
+import gan.post.R;
+
 
 public class NoOrderActivity extends AppCompatActivity {
 

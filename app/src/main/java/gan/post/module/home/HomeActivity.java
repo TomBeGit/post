@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -23,7 +24,12 @@ import java.util.ArrayList;
 
 import gan.post.R;
 import gan.post.model.bean.AdInfo;
+import gan.post.module.ApplicationActivity;
+import gan.post.module.PersonalActivity;
+import gan.post.module.help.HelpActivity;
+import gan.post.module.mywallet.MyWalletActivity;
 import gan.post.module.order.OrderActivity;
+import gan.post.module.settings.SettingsActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -107,10 +113,21 @@ public class HomeActivity extends AppCompatActivity
         mllSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this,"Send",Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "Send", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(HomeActivity.this, gan.post.module.OrderActivity.class);
+                startActivity(it);
             }
         });
     }
+
+    public void help(View view) {
+        startActivity(new Intent(HomeActivity.this, HelpActivity.class));
+    }
+
+    public void wallet(View view) {
+        startActivity(new Intent(HomeActivity.this, MyWalletActivity.class));
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -122,11 +139,16 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+
+    public boolean onCreateOptionsMenud(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    public void goToPersonal(View view) {
+        startActivity(new Intent(HomeActivity.this, PersonalActivity.class));
+
     }
 
     @Override
@@ -137,7 +159,8 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.nav_deliver_app) {
+            startActivity(new Intent(HomeActivity.this, ApplicationActivity.class));
             return true;
         }
 
@@ -163,6 +186,7 @@ public class HomeActivity extends AppCompatActivity
         }
         if (id == R.id.nav_deliver_app) {
             Toast.makeText(this, "nav_deliver_app", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, ApplicationActivity.class));
             return true;
         }
         if (id == R.id.nav_op_ins) {
@@ -171,6 +195,7 @@ public class HomeActivity extends AppCompatActivity
         }
         if (id == R.id.nav_set) {
             Toast.makeText(this, "nav_set", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(HomeActivity.this, SettingsActivity.class));
             return true;
         }
 

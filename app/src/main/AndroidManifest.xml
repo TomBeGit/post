@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gan.post">
+<manifest package="gan.post"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:name=".App.App"
@@ -10,40 +10,79 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".module.home.HomeActivity"
+            android:name=".module.sign.sign.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".module.DraftActivity"
             android:label="@string/title_activity_draft"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".module.OrderActivity"
             android:label="@string/title_activity_order"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".module.NextOrderActivity"
             android:label="@string/title_activity_next_order"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".module.CommentActivity"
             android:label="@string/title_activity_comment"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".module.OrderCommentActivity"
             android:label="@string/title_activity_order_comment"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".module.home.HomeActivity"></activity>
         <activity android:name=".module.order.SendActivity"></activity>
         <activity android:name=".module.order.OrderActivity"></activity>
         <activity android:name=".module.order.FilterActivity"></activity>
         <activity android:name=".module.order.DetailActivity"></activity>
         <activity android:name=".module.order.ResultActivity"></activity>
+        <activity
+            android:name=".module.ApplicationActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".module.PersonalActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".module.SubmittedActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".module.CertificateActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".module.sign.sign.FindPasswordActivity"></activity>
+
+        <activity android:name=".module.sign.sign.RegisterActivity"></activity>
+        <activity android:name=".module.nonet.NoNetActivity">
+
+        </activity>
+        <activity android:name=".module.noorder.NoOrderActivity">
+
+        </activity>
+        <activity android:name=".module.mywallet.MyWalletActivity">
+
+        </activity>
+        <activity android:name=".module.settings.SettingsActivity">
+
+    </activity>
+        <activity android:name=".module.help.HelpActivity">
+
+        </activity>
     </application>
 
 </manifest>

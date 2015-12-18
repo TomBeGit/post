@@ -1,9 +1,6 @@
 package gan.post.module.help;
 
 
-/**
- * Created by Dell on 2015/12/17.
- */
 public class Item {
 
 

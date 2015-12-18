@@ -10,10 +10,10 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import gan.post.module.R;
+import gan.post.R;
 
 
-    public class HelpActivity extends AppCompatActivity implements View.OnClickListener {
+public class HelpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar mToolbar;
     private ListView mlistview;
