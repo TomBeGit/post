@@ -14,13 +14,11 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-<<<<<<< HEAD
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.HomeActivity" />
         <activity
             android:name=".module.DraftActivity"
             android:label="@string/title_activity_draft"
@@ -40,23 +38,12 @@
         <activity
             android:name=".module.OrderCommentActivity"
             android:label="@string/title_activity_order_comment"
-            android:theme="@style/AppTheme"></activity>
-=======
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name=".module.order.SendActivity">
-        </activity>
-        <activity android:name=".module.order.OrderActivity">
-        </activity>
-        <activity android:name=".module.order.FilterActivity">
-        </activity>
-        <activity android:name=".module.order.DetailActivity">
-        </activity>
-        <activity android:name=".module.order.ResultActivity">
-        </activity>
->>>>>>> origin/dev
+            android:theme="@style/AppTheme" />
+        <activity android:name=".module.order.SendActivity"></activity>
+        <activity android:name=".module.order.OrderActivity"></activity>
+        <activity android:name=".module.order.FilterActivity"></activity>
+        <activity android:name=".module.order.DetailActivity"></activity>
+        <activity android:name=".module.order.ResultActivity"></activity>
     </application>
 
 </manifest>
