@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TableRow>
+        <TextView
+            android:id="@+id/text1"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_weight="5"
+    android:text="      Sound"
+    android:textSize="18dp"
+    android:gravity="center_vertical"
+    android:textColor="#777C7F"/>
+    <SeekBar
+        android:id="@+id/seek1"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:max="100"
+        android:progress="10"
+        android:thumb="@drawable/thumb"
+        />
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            />
+
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/text_view2"
+    android:background="#CACFD2"
+    android:layout_width="0dp"
+
+    android:layout_height="2dp"
+    android:layout_weight="1"
+    />
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/text4"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_weight="5"
+    android:text="      Vibrate"
+    android:textSize="18dp"
+    android:gravity="center_vertical"
+
+    android:textColor="#777C7F"/>
+<SeekBar
+    android:id="@+id/seek2"
+    android:layout_width="0dp"
+    android:layout_height="24dp"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    android:max="100"
+    android:progress="10"
+    android:thumb="@drawable/thumb"
+
+    />
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        />
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/text_view3"
+    android:background="#CACFD2"
+    android:layout_width="0dp"
+    android:layout_height="2dp"
+    android:layout_weight="1"
+    />
+</TableRow>
+<TableRow>
+    <TextView
+    android:id="@+id/text5"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_weight="5"
+    android:text="      Push message"
+    android:textSize="18dp"
+    android:gravity="center_vertical"
+
+    android:textColor="#777C7F"/>
+<SeekBar
+    android:id="@+id/seek3"
+    android:layout_width="0dp"
+    android:layout_height="24dp"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:textColor="#777C7F"
+    android:max="100"
+    android:progress="10"
+    android:thumb="@drawable/thumb"
+
+    />
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        />
+</TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view4"
+                android:background="#CACFD2"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view6"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:text="      Reset password"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+
+                android:textColor="#777C7F"/>
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/enter"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view7"
+                android:background="#CACFD2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view8"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:text="      Clear cache"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+
+                android:textColor="#777C7F"/>
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/enter"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view9"
+                android:background="#CACFD2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view10"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:text="      About zthd"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+
+                android:textColor="#777C7F"/>
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/enter"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view5"
+                android:background="#CACFD2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>
