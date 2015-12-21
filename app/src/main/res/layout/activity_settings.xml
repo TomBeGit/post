@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
     <android.support.v7.widget.Toolbar
 
@@ -134,89 +134,15 @@
                 android:layout_weight="1"
                 />
         </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view6"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="5"
-                android:text="      Reset password"
-                android:textSize="18dp"
-                android:gravity="center_vertical"
 
-                android:textColor="#777C7F"/>
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:background="@drawable/enter"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view7"
-                android:background="#CACFD2"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_weight="1"
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view8"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="5"
-                android:text="      Clear cache"
-                android:textSize="18dp"
-                android:gravity="center_vertical"
-
-                android:textColor="#777C7F"/>
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:background="@drawable/enter"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view9"
-                android:background="#CACFD2"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_weight="1"
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view10"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="5"
-                android:text="      About zthd"
-                android:textSize="18dp"
-                android:gravity="center_vertical"
-
-                android:textColor="#777C7F"/>
-            <ImageView
-                android:id="@+id/image1"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:background="@drawable/enter"/>
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/text_view5"
-                android:background="#CACFD2"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_weight="1"
-                />
-        </TableRow>
     </TableLayout>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
+    </ListView>
 
 
 </LinearLayout>
