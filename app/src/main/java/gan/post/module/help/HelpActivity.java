@@ -29,7 +29,7 @@ public class HelpActivity extends AppCompatActivity implements View.OnClickListe
         mToolbar.setNavigationIcon(R.drawable.back);
 
         ItemAdapter adapter = new ItemAdapter(HelpActivity.this,
-                R.layout.list_item,itemList);
+                R.layout.help_item,itemList);
         mlistview = (ListView) findViewById(R.id.list_view);
         mlistview.setAdapter(adapter);
 
